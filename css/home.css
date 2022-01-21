@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+body {
+	background: url("/imgs/background.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-position: top;
+	text-align: center;
+	color: white; 
+	font-family: 'Avenir', sans-serif;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+	margin-top: -20px;
+	font-size: 35px;
+}
+
+.container-fluid {
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.description {
+
+	-webkit-text-stroke: 1.5px black;
+	color: white;
+	font-family: 'Dongle', sans-serif;
+
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.icons {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.bx { 
+
+	font-size: 5rem;
+
+}
+
+.line {
+	position: relative;
+	top: 50%;
+	width: 16em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255, 255, 255, 0.75);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;transform: translateY(-50%);
+}
+
+.anim-typewriter {
+	animation: typewriter 4s steps(36) 1s 1 normal both,
+	blinkTextCursor 500ms steps(15) infinite normal;
+}
+
+
+@keyframes typewriter {
+	from {
+		  width: 0;
+	}
+	to {
+		  width: 5.6em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		  border-right-color: rgba(255, 255, 255, 0.75);
+	}
+	to {
+		  border-right-color: transparent;
+	}
+}
